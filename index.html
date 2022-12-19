@@ -5,9 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    button{
+      background-color: #eff142; /* Green */
+      border: none;
+      color: rgb(22, 51, 116);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    body{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAvkjNWxj8gHSd81Wiom3SCTYWZnFrco25G2wOQyjcaoB1wL5WCRX4BcvKZO9AHeUlbI&usqp=CAU");
+    }
+    label{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: large;
+      
+      color: rgb(225, 243, 60);
+    }
+    input[type=password] {
+      border: none;
+      border-bottom: 6px solid rgb(133, 131, 13);
+    }
+    input[type=file]{
+      color: burlywood;
+    }
+  </style>
 </head>
 <body>
-    <form action="/upload" method="post" style="display: grid; gap: .5rem; grid-template-columns: auto 1fr; max-width: 500px; margin: 0 auto;" enctype="multipart/form-data">
+   <form action="/explntn.html" method="get" style="display: grid; gap: .5rem; grid-template-columns: auto 1fr; max-width: 500px; margin: 0 auto;" enctype="multipart/form-data">
         <label for="file">File:</label>
         <input type="file" id="file" name="file" required />
         <label for="password">Password:</label>
